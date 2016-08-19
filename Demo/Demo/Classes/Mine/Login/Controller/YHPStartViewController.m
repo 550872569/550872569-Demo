@@ -31,7 +31,7 @@
             window.rootViewController = [[YHPGuideViewController alloc] init];
         }else{
         /** !第一次启动 进入登录页 */
-            window.rootViewController = [[YHPLoginAccountViewController alloc] init];
+            window.rootViewController = [[YHPLoginViewController alloc] init];
         }
         return;
     /** 如果用户存在 */
@@ -46,7 +46,7 @@
             window.rootViewController = _baseVC;
         }else{
             /** 如果用户存在 未登录 */
-            window.rootViewController = [[YHPLoginAccountViewController alloc] init];
+            window.rootViewController = [[YHPLoginViewController alloc] init];
         }
     }
 }

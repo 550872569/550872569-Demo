@@ -12,10 +12,32 @@
 
 - (void)GetPhoneReturnNumberParam:(YHPGetPhoneReturnNumerParameter *)parameter {
     
+    [YHPRegisterTool getPhoneReturmNumberWithParam:parameter success:^(YHPRegisterGetPhoneNumerResult *result) {
+        if ([result.code isEqualToString:@"1"]) {
+            self.successBlock(result);
+        } else {
+            self.failureBlock(result);
+        }
+    } failure:^(NSError *error) {
+        if (error) {
+            self.errorBlock(error);
+        }
+    }];
 }
 
-- (void)TestPhoneReturnNumberParam:(YHPTestPhoneReturnNumerParameter *)parameter {
+- (void)TestPhoneReturnNumberParam:(YHPTestPhoneReturnNumberParamter *)parameter {
     
+    [YHPRegisterTool registWithParam:parameter success:^(YHPRegisterGetPhoneNumerResult *result) {
+        if ([result.code isEqualToString:@"1"]) {
+            self.successBlock(result);
+        } else {
+            self.failureBlock(result);
+        }
+    } failure:^(NSError *error) {
+        if (error) {
+            self.errorBlock(error);
+        }
+    }];
 }
 - (void)TestPhoneReturnNumberWithSuccessBlock: (GetPhoneReturnNumberBlock) phoneReturnNumberSuccessBlock
                              WithFailureBlock: (FailureBlock) phoneReturnNumberFailureBlock

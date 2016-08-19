@@ -16,22 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self configChildViewController];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)configChildViewController {
+    YHPHomeViewController *homeVC = [YHPHomeViewController new];
+    YHPNewsViewController *newsVC = [YHPNewsViewController new];
+    YHPDiscoverViewController *discoverVC = [YHPDiscoverViewController new];
+    YHPMineViewController *mineVC = [YHPMineViewController new];
+    [self setUpChildVC:homeVC image:[UIImage imageNamed:@"circle_tablebar"] selectedImage:[UIImage imageNamed:@"circle_tablebar_select"] title:@"Home"];
+    [self setUpChildVC:newsVC image:[UIImage imageNamed:@"topic_tablebar"] selectedImage:[UIImage imageNamed:@"topic_tablebar_select"] title:@"News"];
+    [self setUpChildVC:discoverVC image:[UIImage imageNamed:@"chat_tablebar"] selectedImage:[UIImage imageNamed:@"chat_tablebar_select"] title:@"Discover"];
+    [self setUpChildVC:mineVC image:[UIImage imageNamed:@"mine_tablebar"] selectedImage:[UIImage imageNamed:@"mine_tablebar_select"] title:@"Mine"];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+// 封装创建控制器方法
+- (void)setUpChildVC:(UIViewController *)vc image:(UIImage *)image selectedImage:(UIImage *)selectdeImage title:(NSString *)title {
+    vc.title = title;
+    vc.tabBarItem.image = image;
+    vc.tabBarItem.selectedImage = selectdeImage;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self addChildViewController:nav];
 }
-*/
-
 @end

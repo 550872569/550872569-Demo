@@ -24,4 +24,9 @@
 #define kPathSplashScreen           [kPathCache stringByAppendingPathComponent:@"splashScreen"]
 
 
+#define YHPAccountFilepath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"account.data"]
+
+#define YHPGuideAccountFilepath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"guideAccount.data"]
+
+
 #endif /* PathMacros_h */

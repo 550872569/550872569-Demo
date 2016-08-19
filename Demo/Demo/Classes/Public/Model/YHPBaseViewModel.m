@@ -9,5 +9,13 @@
 #import "YHPBaseViewModel.h"
 
 @implementation YHPBaseViewModel
+-(void) setBlockWithSusscessBlock: (SuccessBlock) susscessBlock
+                 WithFailureBlock: (FailureBlock) failureBlock
+                   WithErrorBlock: (ErrorBlock) errorBlock
+{
+    _successBlock = susscessBlock;
+    _failureBlock = failureBlock;
+    _errorBlock = errorBlock;
+}
 
 @end

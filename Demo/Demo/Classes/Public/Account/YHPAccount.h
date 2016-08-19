@@ -1,9 +1,8 @@
 //
-//  VGAccount.h
-//  VillageSpirits
+//  YHPAccount.h
 //
-//  Created by 胡长俊 on 16/2/1.
-//  Copyright © 2016年 HCJ. All rights reserved.
+//  Created by Yan on 16/2/1.
+//  Copyright © 2016年 Yan. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -31,11 +30,9 @@
 @property (nonatomic,copy)NSString *grade;//等级
 @property (nonatomic,copy)NSString *rate;//用户的好评度 1-5
 @property (nonatomic,copy)NSString *rate_count;//用户被评论的次数
-
 @property (nonatomic,copy)NSString *repetmeNum;
 @property (nonatomic,copy)NSString *messageNum;
 @property (nonatomic,copy)NSString *appraiseNum;
-
 @property (nonatomic,copy)NSString *community;//认证的小区
 @property (nonatomic,copy)NSString *officebuilding;//认证的写字楼
 @property (nonatomic,copy)NSString *school;//认证的学校
@@ -43,9 +40,7 @@
 @property (nonatomic,copy)NSString *profession;//认证的职业
 @property (nonatomic,copy)NSString *salary;//认证的薪资
 @property (nonatomic,copy)NSString *qualification; //认证的资格证书
-
 @property (nonatomic,copy)NSString *exist;//判断是否注册
-
 @property (nonatomic,copy)NSString *lat;
 @property (nonatomic,copy)NSString *lng;
 @property (nonatomic,copy)NSString *auth;

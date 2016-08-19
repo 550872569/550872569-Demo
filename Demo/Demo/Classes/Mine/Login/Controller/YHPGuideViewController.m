@@ -71,7 +71,7 @@
 - (void)toJumpToLoginVC:(id)sender {
     [_scrollView removeFromSuperview];
     UIWindow * window = kAppDelegate.window;
-    window.rootViewController = [YHPLoginAccountViewController new];
+    window.rootViewController = [YHPLoginViewController new];
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"yhp log -------------------YHPGuideViewController");

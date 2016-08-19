@@ -1,16 +1,13 @@
 //
-//  VGAccountTool.m
-//  VillageSpirits
+//  YHPAccount.h
 //
-//  Created by 胡长俊 on 16/2/1.
-//  Copyright © 2016年 HCJ. All rights reserved.
+//  Created by Yan on 16/2/1.
+//  Copyright © 2016年 Yan. All rights reserved.
 //
+
 
 #import "YHPAccountTool.h"
 
-#define VGAccountFilepath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"account.data"]
-
-#define VGGuideAccountFilepath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"guideAccount.data"]
 
 @implementation YHPAccountTool
 /**
@@ -18,7 +15,7 @@
  */
 + (void)save:(YHPAccount *)account{
     // 归档
-    [NSKeyedArchiver archiveRootObject:account toFile:VGAccountFilepath];
+    [NSKeyedArchiver archiveRootObject:account toFile:YHPAccountFilepath];
 }
 
 /**
@@ -26,22 +23,22 @@
  */
 + (YHPAccount *)account{
     // 读取帐号
-    YHPAccount *account = [NSKeyedUnarchiver unarchiveObjectWithFile:VGAccountFilepath];
+    YHPAccount *account = [NSKeyedUnarchiver unarchiveObjectWithFile:YHPAccountFilepath];
     
     return account;
 }
 
-+ (void)saveGuideAccount:(VGGuideAccount *)account
++ (void)saveGuideAccount:(YHPGuideAccount *)account
 {
     // 归档
-    [NSKeyedArchiver archiveRootObject:account toFile:VGGuideAccountFilepath];
+    [NSKeyedArchiver archiveRootObject:account toFile:YHPGuideAccountFilepath];
     
 }
 
-+ (VGGuideAccount *)guideAccount
++ (YHPGuideAccount *)guideAccount
 {
     // 读取帐号
-    VGGuideAccount *account = [NSKeyedUnarchiver unarchiveObjectWithFile:VGGuideAccountFilepath];
+    YHPGuideAccount *account = [NSKeyedUnarchiver unarchiveObjectWithFile:YHPGuideAccountFilepath];
     
     return account;
 }

@@ -26,6 +26,13 @@
 //屏幕分辨率
 #define SCREEN_RESOLUTION (SCREEN_WIDTH * SCREEN_HEIGHT * ([UIScreen mainScreen].scale))
 
+#define kSpaceTop     10
+#define kSpaceLeft    10
+#define kSpaceRight   10
+#define kSpaceBottom  10
+#define kNormolFont  14  //字体
+#define kTextFieldHeight  40 //注册页textfieldH
+
 
 //广告栏高度
 #define BANNER_HEIGHT 215
@@ -39,5 +46,10 @@
 #define FOLLOW_HEIGHT 220
 
 #define SUBCHANNEL_HEIGHT 62
+
+
+#define contentOffSet_x _scrollView.contentOffset.x
+#define frame_width _scrollView.frame.size.width
+#define contentSize_x _scrollView.contentSize.width
 
 #endif /* DimensMacros_h */

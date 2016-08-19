@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class YHPGetPhoneReturnNumerParameter,YHPTestPhoneReturnNumerParameter;
+@class YHPGetPhoneReturnNumerParameter,YHPTestPhoneReturnNumberParamter;
 typedef void(^GetPhoneReturnNumberBlock)(id success);
 
 @interface YHPGetPhoneReturnNumberViewModel : YHPBaseViewModel
@@ -20,7 +20,7 @@ typedef void(^GetPhoneReturnNumberBlock)(id success);
 
 - (void)GetPhoneReturnNumberParam:(YHPGetPhoneReturnNumerParameter *)parameter;
 
-- (void)TestPhoneReturnNumberParam:(YHPTestPhoneReturnNumerParameter *)parameter;
+- (void)TestPhoneReturnNumberParam:(YHPTestPhoneReturnNumberParamter *)parameter;
 
 - (void)TestPhoneReturnNumberWithSuccessBlock: (GetPhoneReturnNumberBlock) phoneReturnNumberSuccessBlock
                              WithFailureBlock: (FailureBlock) phoneReturnNumberFailureBlock

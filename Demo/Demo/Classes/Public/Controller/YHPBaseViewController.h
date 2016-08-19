@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YHPBaseViewController : UIViewController
+@interface YHPBaseViewController : UITabBarController
 
 @end

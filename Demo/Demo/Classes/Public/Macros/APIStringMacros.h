@@ -13,11 +13,11 @@
 
 #ifdef DEBUG
 //Debug状态下的测试API
-#define API_BASE_URL_STRING     @"http://boys.test.companydomain.com/api/"
+#define API_BASE_URL  @"http://test-api.ok-keji.com"
 
 #else
 //Release状态下的线上API
-#define API_BASE_URL_STRING     @"http://www.companydomain.com/api/"
+#define API_BASE_URL  @"https://api.ok-keji.com"
 
 #endif
 

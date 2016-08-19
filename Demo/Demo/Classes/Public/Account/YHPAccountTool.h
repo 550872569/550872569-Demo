@@ -1,26 +1,25 @@
 //
-//  VGAccountTool.h
-//  VillageSpirits
+//  YHPAccount.h
 //
-//  Created by 胡长俊 on 16/2/1.
-//  Copyright © 2016年 HCJ. All rights reserved.
+//  Created by Yan on 16/2/1.
+//  Copyright © 2016年 Yan. All rights reserved.
 //
+
 
 #import <Foundation/Foundation.h>
 #import "YHPAccount.h"
-#import "VGGuideAccount.h"
+#import "YHPGuideAccount.h"
+
 @interface YHPAccountTool : NSObject
 /**
  *  存储帐号
  */
 + (void)save:(YHPAccount *)account;
-
 /**
  *  读取帐号
  */
 + (YHPAccount *)account;
 
-
-+ (void)saveGuideAccount:(VGGuideAccount *)account;
-+ (VGGuideAccount *)guideAccount;
++ (void)saveGuideAccount:(YHPGuideAccount *)account;
++ (YHPGuideAccount *)guideAccount;
 @end

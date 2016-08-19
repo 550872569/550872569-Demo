@@ -1,10 +1,10 @@
 //
-//  VGGuideAccount.h
-//  VillageSpirits
+//  YHPAccount.h
 //
-//  Created by 胡长俊 on 16/3/11.
-//  Copyright © 2016年 HCJ. All rights reserved.
+//  Created by Yan on 16/2/1.
+//  Copyright © 2016年 Yan. All rights reserved.
 //
+
 
 #import <Foundation/Foundation.h>
 

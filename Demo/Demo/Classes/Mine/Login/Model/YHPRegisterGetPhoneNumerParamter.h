@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface YHPRegisterGetPhoneNumerParamter : NSObject
+
 @property (nonatomic, copy) NSString *cellphone;
 @property (nonatomic, copy) NSString *type;
 

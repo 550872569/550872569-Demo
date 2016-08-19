@@ -16,11 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = COLOR_RANDOM;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"yhp log -------------------%@",[NSThread currentThread]);
+    NSLog(@"yhp log -------------------YHPHomeViewController");
 }
-
 @end
